@@ -1,30 +1,5 @@
-import localFont from "next/font/local";
 import "./globals.scss";
 import Header from "./components/header/header";
-
-const publicSansBold = localFont({
-  src: "./fonts/PublicSans-bold.ttf",
-  variable: "--font-public-sans-bold",
-  weight: "700",
-});
-
-const publicSansSemiBold = localFont({
-  src: "./fonts/PublicSans-semibold.ttf",
-  variable: "--font-public-sans-semibold",
-  weight: "600",
-});
-
-const publicSansMedium = localFont({
-  src: "./fonts/PublicSans-medium.ttf",
-  variable: "--font-public-sans-medium",
-  weight: "500",
-});
-
-const publicSansRegular = localFont({
-  src: "./fonts/PublicSans-regular.ttf",
-  variable: "--font-public-sans-regular",
-  weight: "400",
-});
 
 export const metadata = {
   title: "Next.js",
@@ -34,14 +9,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body
-        className={` 
-          ${publicSansBold.variable} 
-          ${publicSansSemiBold.variable} 
-          ${publicSansMedium.variable} 
-          ${publicSansRegular.variable}
-        `}
-      >
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body>
         <Header />
         {children}
       </body>

@@ -30,7 +30,7 @@ export default function Table({ data, isVisible }) {
       <tbody>
         {data.map((item, index) =>
           Object.entries(item)
-            .filter(([key]) => key !== "importer") // Excluir "importer" de las filas
+            .filter(([key]) => key !== "importer")
             .map(([key, value], subIndex) => (
               <tr key={`${index}-${subIndex}`}>
                 <td className={styles.label}>{translations[key] || key}</td>

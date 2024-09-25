@@ -21,6 +21,7 @@ export default function Home() {
 
   // Función para limpiar la tabla cuando se modifica el código
   const handleClear = () => {
+    setCodigo("");
     setContainerData([]);
     setProgreso([]);
     setIsTableVisible(false);
@@ -108,15 +109,19 @@ export default function Home() {
       />
 
       <Progress progreso={progreso} />
-      {hasMatchingContainers ? (
-        <h1 className={styles.title}>Orden #{codigo}</h1>
+
+      {codigo && !error && hasMatchingContainers ? (
+        <h2 className={styles.title}>Orden #{codigo}</h2>
       ) : (
-        codigo && (
+        codigo &&
+        !error &&
+        !hasMatchingContainers && (
           <p className={styles.error}>
             No se encontraron resultados para la orden #{codigo}
           </p>
         )
       )}
+
       {error && <div className={styles.error}>{error}</div>}
       <Table data={containerData} isVisible={isTableVisible} />
     </main>
