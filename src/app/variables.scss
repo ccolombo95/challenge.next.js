@@ -1,0 +1,65 @@
+// Fondos
+$foreground: #212121;
+// Tipografía
+$font-family-base: "Public Sans", sans-serif;
+
+// Tamaños de fuente
+$font-size-h1: 20px;
+$font-size-h2: 24px;
+$font-size-h3: 22px;
+$font-size-h4: 20px;
+$font-size-h5: 18px;
+$font-size-h6: 16px;
+$font-size-subtitle1: 16px;
+$font-size-subtitle2: 14px;
+$font-size-body1: 16px;
+$font-size-body2: 14px;
+$font-size-caption: 12px;
+$font-size-overline: 10px;
+
+// Pesos de fuente
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// Colores primarios
+$primary-color: #009688;
+$primary-light: #a7e4d4;
+$primary-dark: #00796b;
+
+// Colores de éxito
+$success-color: #4caf50;
+$success-light: #b1e5bc;
+$success-dark: #087f23;
+
+// Colores de advertencia
+$warning-color: #ff9800;
+$warning-light: #ffeb99;
+$warning-dark: #b26a00;
+
+// Colores de error
+$error-color: #f44336;
+$error-light: #fbb1ac;
+$error-dark: #ba000d;
+
+// Escala de grises
+$grey-0: #ffffff;
+$grey-100: #f5f5f5;
+$grey-200: #eeeeee;
+$grey-300: #e0e0e0;
+$grey-400: #bdbdbd;
+$grey-500: #9e9e9e;
+$grey-600: #757575;
+$grey-700: #616161;
+$grey-800: #424242;
+$grey-900: #212121;
+
+// Sombras
+$shadow-z1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+$shadow-z4: 0 4px 6px rgba(0, 0, 0, 0.1);
+$shadow-z8: 0 8px 10px rgba(0, 0, 0, 0.12);
+$shadow-z12: 0 12px 16px rgba(0, 0, 0, 0.14);
+$shadow-z16: 0 16px 24px rgba(0, 0, 0, 0.16);
+$shadow-z20: 0 20px 30px rgba(0, 0, 0, 0.18);
+$shadow-z24: 0 24px 38px rgba(0, 0, 0, 0.2);
