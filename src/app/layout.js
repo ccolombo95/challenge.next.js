@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <body
-        className={`
+        className={` 
           ${publicSansBold.variable} 
           ${publicSansSemiBold.variable} 
           ${publicSansMedium.variable} 

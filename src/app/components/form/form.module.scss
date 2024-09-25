@@ -75,3 +75,7 @@
     transition: all 0.5s;
   }
 }
+.error {
+  color: $error-color;
+  font-size: $font-size-body2;
+}

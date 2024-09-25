@@ -106,14 +106,19 @@ export default function Home() {
         onSubmit={handleFormSubmit}
         onCodeChange={handleClear}
       />
+
       <Progress progreso={progreso} />
       {hasMatchingContainers ? (
         <h1 className={styles.title}>Orden #{codigo}</h1>
       ) : (
-        codigo && <p>No se encontraron resultados para la orden #{codigo}</p>
+        codigo && (
+          <p className={styles.error}>
+            No se encontraron resultados para la orden #{codigo}
+          </p>
+        )
       )}
-      <Table data={containerData} isVisible={isTableVisible} />
       {error && <div className={styles.error}>{error}</div>}
+      <Table data={containerData} isVisible={isTableVisible} />
     </main>
   );
 }
